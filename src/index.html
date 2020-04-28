@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roman Numeral Generator</title>
+    <!-- Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href="assets/css/app.css" rel="stylesheet">
+
+    <!-- build:js js/lib.js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <script src="app/app.js"></script>
+    <script src="app/app.service.romanize.js"></script>
+    <script src="app/app.directive.romanize.js"></script>
+    <!-- endbuild -->
+</head>
+<body ng-app="app">
+    <div class="container">
+        <p class="lead">Type a number between 1 and 3,999 to convert to Roman numerals.
+            <br>Alternatively, type a Roman numeral to convert to an integer.</p>
+        <div romanize></div>
+    </div>
+</body>
+</html>
